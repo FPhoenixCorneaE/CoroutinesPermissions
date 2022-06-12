@@ -11,7 +11,8 @@ object Deps {
     const val applicationId = "com.fphoenixcorneae.permissions.demo"
 
     object FPhoenixCorneaE {
-
+        const val coroutinesPermissions =
+            "com.github.FPhoenixCorneaE:CoroutinesPermissions:${Versions.versionName}"
     }
 
     object PluginIds {

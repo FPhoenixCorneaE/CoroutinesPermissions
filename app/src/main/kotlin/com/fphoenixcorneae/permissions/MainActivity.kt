@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
                         // ignore
                     }
                     onShowRationale { permissions, positive, negative ->
+                        // 弹窗解释为什么需要该权限
                         AlertDialog.Builder(this@MainActivity)
                             .setTitle("权限申请")
                             .setMessage("需要申请定位权限")
@@ -42,6 +43,7 @@ class MainActivity : AppCompatActivity() {
                             .show()
                     }
                     onNeverAsk {
+                        // 拒绝并不再询问
                         openApplicationDetailsSettings()
                     }
                 }
